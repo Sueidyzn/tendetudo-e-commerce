@@ -1,10 +1,13 @@
 <template>
+  <!-- <FilhoC mensagem="Olá, Sueidy" @mensagem="receber"/> -->
+   <!-- <HeroC1/> -->
   <div class="ecommerce">
-
+    
   </div>
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
