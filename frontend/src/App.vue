@@ -1,5 +1,6 @@
 <template>
   <header>
+    <HeaderCo/>
   </header>
   <main>
     <div class="main-container">
@@ -11,7 +12,7 @@
 </template>
 
 <script setup>
-
+import HeaderCo from './components/header/HeaderCo.vue';
 </script>
 
 <style>
