@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="carrinho-footer">
-      <strong>
+      <strong class="preco-total">
         Total:
         R$ {{ total }}
       </strong>
@@ -37,21 +37,18 @@
 </template>
 
 <script setup>
-import { defineProps} from 'vue'
-import { computed } from 'vue'
+import { defineProps, computed } from 'vue'
 import { Icon } from '@iconify/vue'
 
 const props = defineProps({
-  carrinho: Array
+    carrinho: Array
 })
 
 const total = computed(() => {
-
-  return props.carrinho.reduce(
-    (acc, item) => acc + item.preco,
-    0
-  )
-
+    return props.carrinho.reduce(
+        (acc, item) => acc + Number(item.preco),
+        0
+    ).toFixed(2)
 })
 </script>
 
@@ -59,7 +56,7 @@ const total = computed(() => {
 .carrinho{
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 24rem;
     max-height: 45rem;
     max-width: 20rem;
     background: #F7F4EB;

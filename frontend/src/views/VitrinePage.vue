@@ -44,11 +44,12 @@ function adicionarCarrinho(produto) {
     justify-content: center;
     gap: 1rem;
     background: #EAECE1;
+    padding: 2rem;
 }
 .vitrine-content{
     display: flex;
     align-items: flex-start;
     max-width: 1500px;
-    padding-block: 2rem;
+    width: 100%;
 }
 </style>
