@@ -31,9 +31,10 @@
   font-family: "Telex", sans-serif;
   display: flex;
   justify-content: space-between;
-  max-width: 1700px; 
+  max-width: 1500px; 
   width: 100%;
   font-weight: 200;
+  padding: 1rem;
 }
 /* logo */
 .logo{
@@ -42,6 +43,7 @@
     justify-content: center;
     line-height: 1;
     min-width: 10rem;
+    margin-left: 1rem;
 }
 /* navbar */
 .header-container nav{

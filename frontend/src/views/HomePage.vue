@@ -1,13 +1,11 @@
 <template>
-  <!-- <FilhoC mensagem="Olá, Sueidy" @mensagem="receber"/> -->
-   <!-- <HeroC1/> -->
   <div class="ecommerce">
-    
+    <HeroCO/>
   </div>
 </template>
 
 <script setup>
-
+import HeroCO from '../components/main/HeroCO.vue';
 </script>
 
 <style scoped>
