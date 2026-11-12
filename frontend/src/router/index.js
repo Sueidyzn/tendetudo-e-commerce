@@ -5,9 +5,11 @@ import HomePage from "../views/HomePage.vue";
 import LoginUser from "../views/LoginUser.vue";
 import RegisterUser from "../views/RegisterUser.vue";
 import ResetPasword from "../views/ResetPasword.vue";
+import VitrinePage from "../views/VitrinePage.vue";
 
 const routes = [
     // Publicas
+    {path: "/Vitrine", component: VitrinePage, name: "VitrinePage"},
     {path: "/Login", component: LoginUser, name: "LoginUser"},
     {path: "/Registrar", component: RegisterUser, name: "RegisterUser"},
     {path: "/account/reset/password", component: ResetPasword, name: "Reset-Password"},

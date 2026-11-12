@@ -10,10 +10,10 @@
     </div>
 
     <div class="hero_slader">
-        <div class="img-slader">
+        <div class="img-slader"  v-if="products.length">
             <img
-            :src="products[currentProduct].image"
-            :alt="products[currentProduct].name"
+            :src="products[currentProduct].imagem"
+            :alt="products[currentProduct].nome"
             class="hero-image"
             />
         </div>
@@ -23,16 +23,19 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { products } from '../../data/products';
+import { carregarProdutos } from '../../data/products';
 
+const products = ref([]);
 const currentProduct = ref(0);
 
 let interval;
 
-onMounted(() => {
+onMounted(async () => {
+    products.value = await carregarProdutos();
+
     interval = setInterval(() => {
         currentProduct.value =
-            (currentProduct.value + 1) % products.length;
+            (currentProduct.value + 1) % products.value.length;
     }, 4000);
 });
 
@@ -162,96 +165,4 @@ onUnmounted(() => {
         opacity: 3;
     }
 }
-
-/*  Slader Hero */
-
-/* Tablet */
-@media (max-width: 900px) {
-    .hero {
-        gap: 1rem;
-        min-height: 22rem;
-    }
-
-    .hero .hero_content {
-        padding-inline: 1rem;
-    }
-
-    .hero_title {
-        font-size: clamp(2rem, 4vw, 2.8rem);
-    }
-
-    .hero .hero_slader .img-slader {
-        width: 90%;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .hero {
-        margin-top: 6rem;
-        flex-direction: column;
-        justify-content: center;
-        min-height: auto;
-        padding: 2rem 1rem;
-        gap: 2rem;
-        overflow: visible;
-    }
-
-    .hero .hero_content {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding: 0;
-    }
-
-    .hero_title {
-        font-size: clamp(2rem, 8vw, 2.8rem);
-    }
-
-    .hero_description {
-        max-width: 100%;
-        font-size: .95rem;
-    }
-
-    .hero .hero_slader {
-        width: 100%;
-        height: auto;
-        min-height: 15rem;
-    }
-
-    .hero .hero_slader .img-slader {
-        width: 85%;
-        height: 15rem;
-        margin-top: 0;
-        border-radius: 2rem;
-    }
-
-    .hero .hero-image {
-        width: 100%;
-        height: 100%;
-        max-height: 14rem;
-        object-fit: contain;
-        margin-bottom: 0;
-    }
-
-    .button-hero {
-        margin-top: 1rem;
-    }
-}
-
-/* Celulares pequenos */
-@media (max-width: 380px) {
-    .hero_title {
-        font-size: 1.8rem;
-    }
-
-    .hero_eyebrow {
-        font-size: .85rem;
-    }
-
-    .hero .hero_slader .img-slader {
-        width: 95%;
-    }
-}
-
 </style>
