@@ -37,6 +37,7 @@ header{
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 /* Main */
 main{

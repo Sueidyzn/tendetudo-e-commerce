@@ -188,7 +188,7 @@ onUnmounted(() => {
 /* Mobile */
 @media (max-width: 600px) {
     .hero {
-        margin-top: 5rem;
+        margin-top: 6rem;
         flex-direction: column;
         justify-content: center;
         min-height: auto;
@@ -253,8 +253,5 @@ onUnmounted(() => {
         width: 95%;
     }
 }
-
-
-
 
 </style>
