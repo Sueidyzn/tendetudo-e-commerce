@@ -21,9 +21,7 @@ import HeaderCo from './components/header/HeaderCo.vue';
 body{
   padding: 0;
   margin: 0;
-  background: #000000;
-  background-color: rgb(0, 0, 0);
-  background: #f8f5f5;
+  background: #F7F4EB;
   font-family: "Telex", sans-serif;
 }
 /* Estrutura VUE */
@@ -39,16 +37,10 @@ header{
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-color: #000000;
-  box-shadow: 1px 1px 1px 1px rgba(129, 129, 129, 0.109);
-  background: white;
-  margin-bottom: 1rem;
 }
 /* Main */
 main{
-  width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
   height: auto; width: 100%;
 }
