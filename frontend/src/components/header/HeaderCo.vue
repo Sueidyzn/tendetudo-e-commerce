@@ -23,7 +23,7 @@
             <li>
                 <router-link to="/" @click="menuOpen = false">home</router-link>
                 <router-link to="/vitrine" @click="menuOpen = false">Vitrine</router-link>
-                <router-link to="/padatro-de-produtos" @click="menuOpen = false">Cadastro de produtos</router-link>
+                <router-link to="/Registrar-Produto" @click="menuOpen = false">Cadastro de produtos</router-link>
                 <router-link class="button-headear" to="/logar" @click="menuOpen = false">Logar</router-link>
             </li>
             </ul>

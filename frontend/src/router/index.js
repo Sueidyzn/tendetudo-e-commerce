@@ -6,15 +6,17 @@ import LoginUser from "../views/LoginUser.vue";
 import RegisterUser from "../views/RegisterUser.vue";
 import ResetPasword from "../views/ResetPasword.vue";
 import VitrinePage from "../views/VitrinePage.vue";
+import CadastroProduto from "../views/CadastroProduto.vue";
 
 const routes = [
     // Publicas
     {path: "/Vitrine", component: VitrinePage, name: "VitrinePage"},
-    {path: "/Login", component: LoginUser, name: "LoginUser"},
+    {path: "/Logar", component: LoginUser, name: "LoginUser"},
     {path: "/Registrar", component: RegisterUser, name: "RegisterUser"},
     {path: "/account/reset/password", component: ResetPasword, name: "Reset-Password"},
     // Privadas
     {path: "/", component: HomePage, name: "Home", meta: {requiresAuth: false}},
+    {path: "/Registrar-Produto", component: CadastroProduto, name: "CadastroProduto", meta: {requiresAuth: true}},
 ]
 
 const router = createRouter({
@@ -38,7 +40,7 @@ router.beforeEach((to, from, next) => {
 
     if (to.meta.requiresAuth && !usuarioLogado) {
 
-        return next("/Login")
+        return next("/Logar")
 
     } else if (
         usuarioLogado &&
