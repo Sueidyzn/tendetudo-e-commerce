@@ -92,7 +92,7 @@ import { Icon } from '@iconify/vue'
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  max-width: 20%; max-height: auto;
+  max-width: 30%; max-height: auto;
   border-radius: 2rem;
   padding-inline: 3rem;
   padding-bottom: 2rem;

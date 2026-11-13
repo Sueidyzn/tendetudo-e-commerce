@@ -1,35 +1,9 @@
-<!-- <template>
-<section>
-  <div class="footer-container">
-    <div class="row">
-      <div class="col-md-6 col-sm-6">
-        <h2>Contato </h2>
-        <p>Shopping Salvador, Salvador,BA</p>
-        <p>Email: <span>autobot@hotmail.com</span></p>
-        <p>Phone: <span> 3398-2812 / (71)994560578</span></p>
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <h2>Redes Sociais</h2>
-        <ul class="social-icons">
-          <li><a href="#" class="fa fa-facebook"></a></li>
-          <li><a href="#" class="fa fa-twitter"></a></li>
-          <li><a href="#" class="fa fa-dribbble"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-</template>
-<script setup></script> -->
-
-
 <template>
-  <footer class="footer">
     <div class="footer-container">
 
       <!-- COLUNA DE CONTATO -->
       <div class="footer-column">
-        <h2>Contato</h2>
+        <h4>Contato</h4>
         <div class="footer-line"></div>
 
         <div class="contact-info">
@@ -49,7 +23,7 @@
 
       <!-- COLUNA DE REDES SOCIAIS -->
       <div class="footer-column">
-        <h2>Redes Sociais</h2>
+        <h4>Redes Sociais</h4>
         <div class="footer-line"></div>
 
         <div class="social-icons">
@@ -118,39 +92,20 @@
       </div>
 
     </div>
-  </footer>
 </template>
 
 <style>
-/* CONFIGURAÇÃO GERAL DA PÁGINA */
-
-.footer {
-  width: 100vw;
-  min-height: 350px;
-
-  /* Faz o footer ocupar a tela inteira,
-     mesmo dentro de um container centralizado */
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-
-  background-color: #26342A;
-  padding: 100px 12.2%;
-  box-sizing: border-box;
-
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-}
 
 .footer-container {
+  max-width: 1440px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
 }
 
-.footer-column h2 {
-  font-size: 36px;
+.footer-column h4 {
+  font-size: 30px;
   font-weight: 300;
   margin: 0 0 25px;
 }

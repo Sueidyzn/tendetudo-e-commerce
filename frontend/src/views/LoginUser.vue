@@ -15,7 +15,7 @@
     align-items: center;
     width: 100%; height: 100%;
     background: #EAECE1;
-    min-height: 40rem;
+    min-height: 50rem;
     padding-block: 3rem;
   }
 </style>

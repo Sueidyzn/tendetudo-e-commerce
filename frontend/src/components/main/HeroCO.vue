@@ -51,7 +51,7 @@ onUnmounted(() => {
     justify-content: space-around;
     max-width: 1440px;
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     padding: 1.5rem;
     gap: 0rem;
     overflow: hidden;

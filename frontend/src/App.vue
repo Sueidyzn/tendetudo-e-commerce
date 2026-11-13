@@ -78,11 +78,17 @@ main {
 
 /* FOOTER */
 footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: none;
-  margin-top: auto;
-  flex-shrink: 0;
+  min-height: 350px;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background: #26342A;
 }
 
 /* BOTÃO GLOBAL */

@@ -94,6 +94,7 @@ defineEmits([
 /* card-header-produto */
 .card-header-produto{
   max-height: 16rem;
+  background: #f1f0e8;
 }
 
 .card-header-produto img{
