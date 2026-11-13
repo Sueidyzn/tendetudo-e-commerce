@@ -3,7 +3,7 @@
     <div class="hero_content">
         <p class="hero_eyebrow">uma vitrine de possibilidades</p>
         <h2 class="hero_title">
-            descrubra objetos <br> para viver melhor.
+            descubra objetos <br> para viver melhor.
         </h2>
         <p class="hero_description">um previa de uma experciencia de compra feita para encontrar peças especiais com calma e inspiração</p>
         <router-link to="/vitrine" type="button" class="button-hero">explorar a vitrine</router-link>

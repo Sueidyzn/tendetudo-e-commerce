@@ -1,53 +1,92 @@
+
 <template>
   <header>
     <HeaderCo/>
   </header>
+
   <main>
     <div class="main-container">
       <router-view/>
     </div>
   </main>
+
   <footer>
+    <FooterCO/>
   </footer>
 </template>
 
 <script setup>
 import HeaderCo from './components/header/HeaderCo.vue';
+import FooterCO from './components/footer/FooterCO.vue';
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Baloo+Bhaina+2&family=Telex&display=swap');
-/* Body */
-body{
-  padding: 0;
+
+/* CONFIGURAÇÃO GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
   margin: 0;
+  padding: 0;
+}
+
+body {
   background: #F7F4EB;
   font-family: "Telex", sans-serif;
+  overflow-x: hidden;
 }
-/* Estrutura VUE */
+
+/* ESTRUTURA VUE */
 #app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  /* ALTERAÇÃO PRINCIPAL */
+  align-items: stretch;
+
+  width: 100%;
+  min-height: 100vh;
+  max-width: none;
   color: #000000;
 }
-/* Header */
-header{
+
+/* HEADER */
+header {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
 }
-/* Main */
-main{
+
+/* MAIN */
+main {
   display: flex;
   flex-direction: column;
-  height: auto; width: 100%;
+  width: 100%;
+  height: auto;
 }
-/* Botão Global */
+
+/* CONTAINER PRINCIPAL */
+.main-container {
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+/* BOTÃO GLOBAL */
 button {
   cursor: pointer;
 }
-
 </style>
